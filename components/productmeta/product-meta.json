@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_productmeta_product_metas",
+  "info": {
+    "name": "productMeta",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Featured": {
+      "type": "boolean"
+    },
+    "inStock": {
+      "type": "boolean"
+    },
+    "newProduct": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_if_wine_if_wines",
+  "info": {
+    "name": "ifWine",
+    "icon": "wine-bottle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "varietal_en": {
+      "type": "string"
+    },
+    "varietal_ch": {
+      "type": "string"
+    },
+    "serving_temp": {
+      "type": "string"
+    },
+    "pairing_en": {
+      "type": "text"
+    },
+    "pairing_ch": {
+      "type": "text"
+    },
+    "palate_en": {
+      "type": "text"
+    },
+    "palate_ch": {
+      "type": "text"
+    },
+    "nose_en": {
+      "type": "text"
+    },
+    "nose_ch": {
+      "type": "text"
+    },
+    "color_en": {
+      "type": "string"
+    },
+    "color_ch": {
+      "type": "string"
+    },
+    "ABV": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "string"
+    }
+  }
+}

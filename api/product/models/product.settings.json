@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "PRODUCT",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product_name_en": {
+      "type": "string"
+    },
+    "product_name_ch": {
+      "type": "string"
+    },
+    "producerType": {
+      "type": "enumeration",
+      "enum": [
+        "Monastic",
+        "Secular"
+      ]
+    },
+    "producer": {
+      "model": "producer"
+    },
+    "product_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "productType": {
+      "type": "enumeration",
+      "enum": [
+        "Wine",
+        "Beer",
+        "Liqueur",
+        "Cider"
+      ]
+    },
+    "product_blurb_en": {
+      "type": "text"
+    },
+    "product_blurb_ch": {
+      "type": "text"
+    },
+    "product_about_en": {
+      "type": "richtext"
+    },
+    "product_about_ch": {
+      "type": "richtext"
+    },
+    "productTypeDetails": {
+      "type": "dynamiczone",
+      "components": [
+        "if-beer.if-beer",
+        "if-liqueur.if-liqueur",
+        "if-wine.if-wine"
+      ]
+    },
+    "productMetaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "productmeta.product-meta"
+    }
+  }
+}

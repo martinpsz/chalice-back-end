@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "producers",
+  "info": {
+    "name": "PRODUCER",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "producer_name_en": {
+      "type": "string"
+    },
+    "producer_name_ch": {
+      "type": "string"
+    },
+    "producerType": {
+      "type": "enumeration",
+      "enum": [
+        "Monastic",
+        "Secular"
+      ]
+    },
+    "producer_about_en": {
+      "type": "richtext"
+    },
+    "producer_about_ch": {
+      "type": "richtext"
+    },
+    "producer_testimonial_en": {
+      "type": "richtext"
+    },
+    "producer_testimonial_ch": {
+      "type": "richtext"
+    },
+    "products": {
+      "collection": "product"
+    },
+    "producer_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

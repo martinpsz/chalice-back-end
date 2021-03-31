@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_if_liqueur_if_liqueurs",
+  "info": {
+    "name": "ifLiqueur",
+    "icon": "glass-martini-alt"
+  },
+  "options": {},
+  "attributes": {
+    "ABV": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "string"
+    },
+    "category_en": {
+      "type": "string"
+    },
+    "category_ch": {
+      "type": "string"
+    }
+  }
+}
